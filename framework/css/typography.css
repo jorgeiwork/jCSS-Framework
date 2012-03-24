@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+jTypography Beta - a Typography Template/Framework
+Copyright (C) 2012 Jorge Iraheta, JorgeIraheta.com
+Creative Commons Attribution-Share Alike 3.0 License
+version 0.5.2
+*/
+
+/*@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono|Droid+Sans:400,700|Droid+Serif:400,400italic,700,700italic);*/
+
+body{
+	font-size: 12px;
+	line-height:18px; 
+	 /*12/18*/ 
+}
+
+/***Typography Controls***/
+
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#555;	/*Global Font Control*/
+	text-align:left;
+}
+
+h1, h2, h3 ,h4, h5, h6 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#353535;	/*Headers Font Control*/
+}
+
+table {
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;	
+	/*Tables and Data Type Controls*/
+}
+
+code, kbd, samp, tt{
+	font-family:"Lucida Console", Monaco, monospace	/* Extra Controls*/
+}
+
+
+
+/***HEADERS***/
+
+h1,h2,h3,h4,h5,h6 { font-weight: normal;}
+
+h1 { font-size: 36px; line-height: 36px; margin-bottom:18px;} /*36px/18*/
+h2 { font-size: 28px; line-height: 36px; margin-bottom:18px;}  /*28px/18*/
+h3 { font-size: 22px; line-height: 36px; margin-bottom:18px;} /*22px/18*/
+h4 { font-size: 18px; line-height: 18px; margin-bottom:18px; font-weight:bold;} /*18px/18*/
+h5 { font-size: 12px; line-height: 18px; font-weight:bold;} /*12px/18*/
+h6 { font-size: 11px; line-height: 18px; font-weight:bold;} /*11px*/
+
+
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img { margin: 0; }
+
+
+.subline {font-size:12px;position:relative; top:-14px; font-style:italic; line-height:18px;}
+
+/***CONTENT***/
+
+p {word-spacing: 0.125em; line-height:18px; margin-bottom:18px;}
+
+b, strong, caption, th, thead, dt, legend	{font-weight:bold;}
+
+blockquote {padding: 0 1.5em;font-style:italic;}
+blockquote p:before{content: '\0022';}
+blockquote p:after{content: '\0022';}
+
+/* Extra Classes */
+.hide { display: none; } 
+.push_18px {margin-left:18px;}
+.border {border: 1px solid #ccc; padding:7px;}
+.date {text-align:right; font-family:"Lucida Console", Monaco, monospace; margin-top:9px;}
+.copy{text-align:center;}
+
+/**Extras List styles**/
+
+.jtRomans {list-style:upper-roman outside;}
+.jtRomans ol {list-style: lower-roman outside;}
+.jtAlpha {list-style: upper-alpha outside;}
+.jtAlpha ol {list-style: lower-alpha outside;}
+
+.jtCheckgreen {list-style-image:url(../images/icons/tick.png);}
+.jtCheckred {list-style-image:url(../images/icons/tickred.png);}
+.jtAddgreen {list-style-image:url(../images/icons/addgreen.png);}
+.jtStarsred {list-style-image:url(../images/icons/starred.png);}
+
+/**Hightlights**/
+.jtHighlight1,
+.jtHighlight2,
+.jtHighlight3,
+.jtHighlight4 {
+	padding:1px 5px;
+	cursor:default;
+	-moz-transition: all 0.3s ease-out 0s;
+}
+
+.jtHighlight1 {background:#eee;}
+.jtHighlight2 {color:#FFF; background: #F60;}
+.jtHighlight3 {color:#FFF; background: #C00;}
+.jtHighlight4 {color:#FFF; background: #00aeef;}
+
+/*Transitions */
+
+.jtHighlight1:hover {background:#000; color:#fff;}
+.jtHighlight2:hover,
+.jtHighlight3:hover,
+.jtHighlight4:hover
+ {background:yellow; color:#000;}
+
+/******************ICONS********************/
+
+.jtAccept{ background-position: 0 0; background: url(../images/icons/accept.png) no-repeat; padding-left:25px; } 
+.jtAdd{ background-position: 0 0; background: url(../images/icons/add.png) no-repeat; padding-left:25px; } 
+.jtBox{ background-position: 0 0; background: url(../images/icons/box.png) no-repeat; padding-left:25px; } 
+.jtBrick{ background-position: 0 0; background: url(../images/icons/brick.png) no-repeat; padding-left:25px; }
+.jtCalendar{ background-position: 0 0; background: url(../images/icons/calendar.png) no-repeat; padding-left:25px; } 
+.jtCamera{ background-position: 0 0; background: url(../images/icons/camera.png) no-repeat; padding-left:25px; } 
+.jtCart{ background-position: 0 0; background: url(../images/icons/cart.png) no-repeat; padding-left:25px; } 
+.jtCd{ background-position: 0 0; background: url(../images/icons/cd.png) no-repeat; padding-left:25px; } 
+.jtCd_go{ background-position: 0 0; background: url(../images/icons/cd_go.png) no-repeat; padding-left:25px; } 
+.jtChart_bar{ background-position: 0 0; background: url(../images/icons/chart_bar.png) no-repeat; padding-left:25px; } 
+.jtChart_line{ background-position: 0 0; background: url(../images/icons/chart_line.png) no-repeat; padding-left:25px; } 
+.jtChart_pie{ background-position: 0 0; background: url(../images/icons/chart_pie.png) no-repeat; padding-left:25px; } 
+.jtClock{ background-position: 0 0; background: url(../images/icons/clock.png) no-repeat; padding-left:25px; } 
+.jtCog{ background-position: 0 0; background: url(../images/icons/cog.png) no-repeat; padding-left:25px; } 
+.jtCoins{ background-position: 0 0; background: url(../images/icons/coins.png) no-repeat; padding-left:25px; } 
+.jtCompress{ background-position: 0 0; background: url(../images/icons/compress.png) no-repeat; padding-left:25px; } 
+.jtComputer{ background-position: 0 0; background: url(../images/icons/computer.png) no-repeat; padding-left:25px; } 
+.jtCreditcards{ background-position: 0 0; background: url(../images/icons/creditcards.png) no-repeat; padding-left:25px; } 
+.jtCross{ background-position: 0 0; background: url(../images/icons/cross.png) no-repeat; padding-left:25px; } 
+.jtDisk{ background-position: 0 0; background: url(../images/icons/disk.png) no-repeat; padding-left:25px; } 
+.jtEmail{ background-position: 0 0; background: url(../images/icons/email.png) no-repeat; padding-left:25px; } 
+.jtError{ background-position: 0 0; background: url(../images/icons/error.png) no-repeat; padding-left:25px; } 
+.jtExclamation{ background-position: 0 0; background: url(../images/icons/exclamation.png) no-repeat; padding-left:25px; } 
+.jtFeed{ background-position: 0 0; background: url(../images/icons/feed.png) no-repeat; padding-left:25px; } 
+.jtFilm{ background-position: 0 0; background: url(../images/icons/film.png) no-repeat; padding-left:25px; } 
+.jtFolder{ background-position: 0 0; background: url(../images/icons/folder.png) no-repeat; padding-left:25px; } 
+.jtGroup{ background-position: 0 0; background: url(../images/icons/group.png) no-repeat; padding-left:25px; } 
+.jtHeart{ background-position: 0 0; background: url(../images/icons/heart.png) no-repeat; padding-left:25px; } 
+.jtHelp{ background-position: 0 0; background: url(../images/icons/help.png) no-repeat; padding-left:25px; } 
+.jtHouse{ background-position: 0 0; background: url(../images/icons/house.png) no-repeat; padding-left:25px; }
+.jtImage{ background-position: 0 0; background: url(../images/icons/image.png) no-repeat; padding-left:25px; } 
+.jtImages{ background-position: 0 0; background: url(../images/icons/images.png) no-repeat; padding-left:25px; } 
+.jtInformation{ background-position: 0 0; background: url(../images/icons/information.png) no-repeat; padding-left:25px; } 
+.jtLock{ background-position: 0 0; background: url(../images/icons/lock.png) no-repeat; padding-left:25px; } 
+.jtMagnifier{ background-position: 0 0; background: url(../images/icons/magnifier.png) no-repeat; padding-left:25px; } 
+.jtMoney{ background-position: 0 0; background: url(../images/icons/money.png) no-repeat; padding-left:25px; } 
+.jtNew{ background-position: 0 0; background: url(../images/icons/new.png) no-repeat; padding-left:25px; } 
+.jtNote{ background-position: 0 0; background: url(../images/icons/note.png) no-repeat; padding-left:25px; } 
+.jtPage{ background-position: 0 0; background: url(../images/icons/page.png) no-repeat; padding-left:25px; } 
+.jtPage_white{ background-position: 0 0; background: url(../images/icons/page_white.png) no-repeat; padding-left:25px; } 
+.jtPlugin{ background-position: 0 0; background: url(../images/icons/plugin.png) no-repeat; padding-left:25px; } 
+.jtPrinter{ background-position: 0 0; background: url(../images/icons/printer.png) no-repeat; padding-left:25px; } 
+.jtReport{ background-position: 0 0; background: url(../images/icons/report.png) no-repeat; padding-left:25px; } 
+.jtRss{ background-position: 0 0; background: url(../images/icons/rss.png) no-repeat; padding-left:25px; } 
+.jtScript{ background-position: 0 0; background: url(../images/icons/script.png) no-repeat; padding-left:25px; } 
+.jtUser{ background-position: 0 0; background: url(../images/icons/user.png) no-repeat; padding-left:25px; }
+.jtWebcam{ background-position: 0 0; background: url(../images/icons/webcam.png) no-repeat; padding-left:25px; } 
+.jtWorld{ background-position: 0 0; background: url(../images/icons/world.png) no-repeat; padding-left:25px; } 
+
+
+
+
+
+

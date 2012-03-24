@@ -1,0 +1,333 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+jCSS Framework Beta - a Typography Template/Framework
+Copyright (C) 2012 Jorge Iraheta, JorgeIraheta.com
+Creative Commons Attribution-Share Alike 3.0 License
+version 0.5.2
+*/
+
+/* v2.0 | 20110126
+  http://meyerweb.com/eric/tools/css/reset/ 
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	/* [disabled]vertical-align: baseline; */
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/**********************************************************
+************************LIST ITEMS*************************
+**********************************************************/
+
+ul {list-style:disc outside; margin-left:1.5em; margin-bottom:18px;}
+ol {list-style:decimal outside;margin-left:1.5em;}
+ol ol, ul ul{margin:9px;}
+li {line-height:18px; margin:4.5px 0;}
+
+
+/**********************************************************
+************************TABLES STYLES**********************
+**********************************************************/
+
+table {
+	width:100%;
+	margin-bottom:18px;
+	border-bottom:0px solid #ccc;	
+}
+
+th {
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #B5B5B5;
+	padding: 12px 9px;
+	background-color:#e0e0e0;
+	border-right:1px solid #ccc;
+}
+
+td {
+	padding: 9px 9px;
+	line-height:18px;
+	border-right:1px solid #ccc;	
+}
+
+tr {
+	border-bottom:1px solid #ccc;
+	padding:0;
+}
+
+/*tr:nth-of-type(odd) {
+	background-color:#DFDFDF;
+}*/
+
+thead th {
+	background-color: #e0e0e0;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #7C7C7C;
+	border-top-width: 1px;
+	border-top-style: dotted;
+	border-top-color: #858585;
+}
+
+/**Table Usability effects**/
+
+tr:hover {
+	background-color: #F1FFBB;
+	cursor:default;
+}
+
+
+
+hr {
+  border: 0;
+  width: 100%;  
+  background-color: #ccc;
+  height: 1px;
+  margin:17px 0;
+}
+
+/**********************************************************
+************************LINK STYLES************************
+**********************************************************/
+
+/* Links */
+a:link {
+	color: #666;
+	text-decoration: none;
+} 
+a:visited {
+	color: #666;
+	text-decoration: none;
+}
+a:hover,a:focus {color: #111; text-decoration: underline;}
+a:active {}
+
+/**********************************************************
+************************FORM STYLES************************
+**********************************************************/
+
+form {	
+	margin:-0px -1px 18px -1px; 
+	border:1px solid #ccc; 
+	overflow:hidden;
+	border-radius:8px;
+}
+
+fieldset {
+	border:1px solid #bbb;
+	padding:17px;
+	margin: 11px;
+	border-radius:8px;
+	overflow:hidden;
+}
+
+legend {
+	font-size:14px;
+	font-weight:bold;
+	padding:0 4.5px;
+	color:#666;
+	text-transform:uppercase;
+}
+
+label {
+	padding:4.5px;
+}
+
+/**INPUT STYLES**/
+
+input[type="text"]{
+	margin:4.5px;
+	display:block;
+	position:relative;
+	cursor:pointer;
+	width:90%;
+	padding:7px;
+	border: 1px solid #ccc;
+	color:#999;
+}
+
+textarea {
+	border:1px solid #ccc;
+	width:90%;
+	margin:4.5px;
+	padding:8px;
+	border-radius:8px;
+}
+
+input:focus {
+	border:1px solid #77E3FF;
+	color:inherit;
+}
+
+.required {color:red;}
+
+/**Submit Button Style**/
+
+#formbutton {
+	width:100px;
+	margin-left:16px;
+	background:#777;
+	color:#fff;
+	border:1px solid #ccc;
+	border-radius:8px;
+	margin-bottom:18px;
+	float:right;
+	padding:4.5px;
+}
+
+#formbutton:hover {
+	background-color:#666;
+	color:#FFF;
+	cursor:pointer;
+}
+
+
+/**********************************************************
+*********************BASIC HTML TAGS***********************
+**********************************************************/
+
+abbr, acronym, .help {
+  border-bottom: 1px dotted #333;
+  cursor: help;
+  }
+  
+dfn, cite, var, em, address{font-style:italic;}
+
+del {
+	font-style:oblique;
+	color:#666;
+}
+
+ins {
+	text-decoration:underline;
+}
+
+small {font-size:9px; line-height:16px;}
+
+/**Custom Pre code**/
+
+pre code {			
+	color: #FFF;	
+	}
+pre {
+	padding-left:10px;
+	border-left:15px solid #09F;
+	overflow: auto;
+	width: 93%;
+	background-image:url(../images/prebg.jpg);
+	background-position: center top;
+	background-repeat: repeat;
+	border-radius:0 5px 5px 0;
+	margin: 9px 0;
+	}
+/* target IE7 and IE6 */
+*:first-child+html pre {
+	padding-bottom: 2em;
+	overflow-y: hidden;
+	overflow: visible;
+	overflow-x: auto; 
+	}
+
+
+/**********************************************************
+***********HTML 5 ELEMENTS - WORK IN PROGRESS**************
+**********************************************************/
+
+/**************VIDEO****************/
+.controls {
+	position:relative;
+	width:500px;
+}
+
+#seek {
+	width:42%;
+	position:absolute;
+	right:44px;
+	bottom:10px;
+	
+}
+
+#volume {
+	bottom: 4px;
+    position: relative;
+    right: -6px;
+}
+.vidvol {
+	bottom: 6px;
+    content: "Vol";
+    padding: 1px;
+    position: absolute;
+    right: 8px;
+    text-align: center;
+    width: 22px;
+}
+
+#play, #stop, #skipBack, #fullScreen {
+	border:1px solid #ccc;
+	padding:3px;
+	width:60px;
+	border-radius:8px;
+	cursor:pointer;
+	background-color: #D8D8D8;
+	font-size:9px;
+}
+#play:hover, #stop:hover, 
+#skipBack:hover, fullScreen:hover {background:#ccc;}
+
+/**Remove Seek Bar when mobile**/
+@media only screen and (max-width:890px){
+	#seek {width:150px !important;}
+	}
+
+@media only screen and (max-width:700px){
+	#seek {display:none;}
+	}
+/***IMAGE CAPTION***/
+.imgRightCaption {float:right; padding:8px 10px; border:1px solid #ccc; margin-bottom:18px; background-color:#f5f5f5;}
+figcaption {
+	font-style:italic;
+	text-align:center;
+	font-family:"MS Serif", "New York", serif;
+	letter-spacing:0.1em;
+}
+
+
