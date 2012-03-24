@@ -43,8 +43,7 @@ Then add the following head code to all your HTML pages:
 
     print.css	- This is the print styles sheet for when users like to print page.
 
-    styles.css	- This is where you can add your own styles and build your website. NOTE: 
-This files includes a simple navigation style, please remove if you are not going to use it.
+    styles.css	- This is where you can add your own styles and build your website. NOTE: This files includes a simple navigation style, please remove if you are not going to use it.
 
     jquery.min.js	- This is JQuery file from google CDN
     html5.js	- This allowes the use of common html 5 tag on older browsers.
