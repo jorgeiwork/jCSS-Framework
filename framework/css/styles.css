@@ -7,8 +7,10 @@ version 0.5.2
 */
 
 /******DEMO CONTENT REPLACE WITH YOUR OWN*******/
+.comments {line-height:1.5em;}
 .baseline {background: url(../images/extras/baseline16t.jpg) ;}
 .colgrid {background: url(../images/extras/16colgrid.png) repeat-y top center;}
+
 
 
 @media only screen and (max-width:770px) {
@@ -22,10 +24,11 @@ version 0.5.2
   ************************NAVIGATION*************************
   **********************************************************/
   nav {
-    margin:0;
+    margin:16px 0;
     width:auto;
 	border:1px solid #ccc;
-	margin-bottom:18px;
+	
+	
 	
 	
  }
@@ -33,7 +36,7 @@ version 0.5.2
   nav ul {
     margin:0;
     padding:0;
-    line-height:30px;
+    line-height:1.5em;
  }
 
   nav li {
@@ -43,14 +46,14 @@ version 0.5.2
     float:left;
     position:relative;     
 	background:#FFF;
-	line-height:29px;
+	line-height:2.5em;
 	padding:1px;
 	
  }
 
   nav ul li a {
     text-align:center; 
-    height:30px;
+    height:32px;
     width:100px;
     display:block;
     color:#000; 

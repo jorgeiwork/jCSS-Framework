@@ -58,10 +58,10 @@ table {
 ************************LIST ITEMS*************************
 **********************************************************/
 
-ul {list-style:disc outside; margin-left:1.5em; margin-bottom:18px;}
+ul {list-style:disc outside; margin-left:1.5em; margin-bottom:1.5em;}
 ol {list-style:decimal outside;margin-left:1.5em;}
 ol ol, ul ul{margin:9px;}
-li {line-height:18px; margin:4.5px 0;}
+li {line-height:1.5em; }
 
 
 /**********************************************************
@@ -78,14 +78,13 @@ th {
 	border-top-width: 2px;
 	border-top-style: solid;
 	border-top-color: #B5B5B5;
-	padding: 12px 9px;
+	padding: 7px 9px;
 	background-color:#e0e0e0;
 	border-right:1px solid #ccc;
 }
 
 td {
-	padding: 9px 9px;
-	line-height:18px;
+	padding: 8px 9px;	
 	border-right:1px solid #ccc;	
 }
 
@@ -94,9 +93,6 @@ tr {
 	padding:0;
 }
 
-/*tr:nth-of-type(odd) {
-	background-color:#DFDFDF;
-}*/
 
 thead th {
 	background-color: #e0e0e0;
@@ -120,9 +116,9 @@ tr:hover {
 hr {
   border: 0;
   width: 100%;  
-  background-color: #ccc;
-  height: 1px;
-  margin:17px 0;
+  background-color: #ccc;  
+  margin:18px 0;
+  display:none;
 }
 
 /**********************************************************
@@ -230,7 +226,7 @@ abbr, acronym, .help {
   cursor: help;
   }
   
-dfn, cite, var, em, address{font-style:italic;}
+dfn, cite, var, em, address{font-style:italic; line-height:1.5em;}
 
 del {
 	font-style:oblique;
@@ -241,7 +237,7 @@ ins {
 	text-decoration:underline;
 }
 
-small {font-size:9px; line-height:16px;}
+small {font-size:9px; line-height:1em;}
 
 /**Custom Pre code**/
 

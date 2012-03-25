@@ -11,9 +11,7 @@ version 0.5.2
 /*@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono|Droid+Sans:400,700|Droid+Serif:400,400italic,700,700italic);*/
 
 body{
-	font-size: 12px;
-	line-height:18px; 
-	 /*12/18*/ 
+	font-size: 12px !important; /*12 Base*/ 
 }
 
 /***Typography Controls***/
@@ -30,14 +28,14 @@ h1, h2, h3 ,h4, h5, h6 {
 	color:#353535;	/*Headers Font Control*/
 }
 
-table {
-	font-family:Tahoma, Geneva, sans-serif;
-	font-size:12px;	
+table, tr, th, td {	
+	line-height:1.5em;
 	/*Tables and Data Type Controls*/
 }
 
 code, kbd, samp, tt{
-	font-family:"Lucida Console", Monaco, monospace	/* Extra Controls*/
+	font-family:"Lucida Console", Monaco, monospace;	/* Extra Controls*/
+	line-height:1.5em;
 }
 
 
@@ -46,22 +44,37 @@ code, kbd, samp, tt{
 
 h1,h2,h3,h4,h5,h6 { font-weight: normal;}
 
-h1 { font-size: 36px; line-height: 36px; margin-bottom:18px;} /*36px/18*/
-h2 { font-size: 28px; line-height: 36px; margin-bottom:18px;}  /*28px/18*/
-h3 { font-size: 22px; line-height: 36px; margin-bottom:18px;} /*22px/18*/
-h4 { font-size: 18px; line-height: 18px; margin-bottom:18px; font-weight:bold;} /*18px/18*/
-h5 { font-size: 12px; line-height: 18px; font-weight:bold;} /*12px/18*/
-h6 { font-size: 11px; line-height: 18px; font-weight:bold;} /*11px*/
+h1 { font-size: 3em; line-height: 1em; margin:0.5em 0;} /*36px/36px*/
+h2 { font-size: 2.25em; line-height: 1.3em; margin:0.6667em  0;}  /*27px/36*/
+h3 { font-size: 1.8333em; line-height: 1.6364em; margin:0.8182em 0 0 0;} /*22px/36*/
+h4 { font-size: 1.5em; line-height: 1em; margin:1em 0 0 0; font-weight:bold;} /*18px/18*/
+h5 { font-size: 1em; line-height: 1.5em; margin:1.5em 0 0 0; font-weight:bold;} /*12px/18*/
+h6 { font-size: 0.9167em; line-height: 1.6364em; margin:1.6364em 0 0 0; font-weight:bold;} /*11px*/
 
+/**Perfect positioning**/
+
+h1 {position:relative; top:4px;}
+h2 {position:relative; top:9px;}
+h3 {position:relative; top:11px;}
+h4 {position:relative; top:3px;}
+h5 {position:relative; top:5px;}
+h6 {position:relative; top:6px;}
 
 h1 img, h2 img, h3 img, h4 img, h5 img, h6 img { margin: 0; }
 
 
-.subline {font-size:12px;position:relative; top:-14px; font-style:italic; line-height:18px;}
+h2.subline { font-size: 1em; line-height: 1.5em; margin:1.5em 0 0 0; font-style:italic; position:relative; top:-15px;}
 
 /***CONTENT***/
 
-p {word-spacing: 0.125em; line-height:18px; margin-bottom:18px;}
+p {
+	font-size: 1em; /* 12px */ 
+	line-height: 1.5em; /* 18px */ 
+	margin: 1.5em 0;
+	word-spacing: 0.125em; 	
+	position:relative;
+	top:3px;
+	}
 
 b, strong, caption, th, thead, dt, legend	{font-weight:bold;}
 
